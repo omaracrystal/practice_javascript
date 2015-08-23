@@ -13,21 +13,6 @@ function getFileExtension(string) {
 console.log(getFileExtension("happy.gif"));
 
 
-function getFileExtension(i) {
-    // i will be a string, but it may not have a file extension.
-    // return the file extension (with no period) if it has one, otherwise false
-
-    var filenameArray = i.split(”.”);
-
-    if(filenameArray.length <= 1) {
-        //  i.e. “foo” becomes [“foo”] (array with 1 member)
-        return false;
-    } else {
-        //  must be an array with more than 1 member.  The extension must be at the end.
-        return filenameArray[filenameArray.length - 1];
-    }
-}
-
 
 function longestString(array) {
     // return the longest string in the array
@@ -43,27 +28,6 @@ function longestString(array) {
 }
 
 console.log(longestString([123, ["hello", 67, 888888], "try", {key: "key", value: "this is the longest String"}]))
-
-
-function longestString(i) {
-    // i will be an array.
-    // return the longest string in the array
-
-    var longest = ””,
-        n, len;
-
-    for(n=, len=i.length; n<len; n++) {
-        if(typeof n[i] !== “string”) {
-            //  not a string, go to next iteration of the loop
-            continue;
-        }
-
-        if(n[i].length > longest.length) {
-            //  Current string is longer, so set it as the new longest string
-            longest = n[i];
-        }
-    }
-}
 
 
 
