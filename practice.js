@@ -68,6 +68,8 @@ function longestString(i) {
 
 
 function arraySum(obj) {
+// i will be an array, containing integers, strings and/or arrays like itself.
+// Sum all the integers you find, anywhere in the nest of arrays. DO CONVERT a number string into an integer
     var sum = 0;
     var num = Number(obj);
 
@@ -103,7 +105,7 @@ console.log(arraySum(a));
 
 function arraySum(i) {
   // i will be an array, containing integers, strings and/or arrays like itself.
-  // Sum all the integers you find, anywhere in the nest of arrays.
+  // Sum all the integers you find, anywhere in the nest of arrays. DO NOT CONVERT a number string into an integer
   var ret = [], flatten
 
   (flatten = function(arr) {
